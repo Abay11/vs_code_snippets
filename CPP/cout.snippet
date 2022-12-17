@@ -9,13 +9,18 @@
 		</Header>
         <Snippet>
             <Code Language="CPP">
-                <![CDATA[std::cout << $expr$ << std::endl;]]>
+                <![CDATA[std::cout << $expr$ << $delim$;]]>
             </Code>
 			<Declarations>
 				<Literal>
 					<ID>expr</ID>
 					<ToolTip>Specify expression to substitute.</ToolTip>
 					<Default>""</Default>
+				</Literal>
+				<Literal>
+					<ID>delim</ID>
+					<ToolTip>Specify delimeter.</ToolTip>
+					<Default>std::endl</Default>
 				</Literal>
 			</Declarations>
 		</Snippet>
